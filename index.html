@@ -14,44 +14,60 @@
 		
 		<style>
 			@media screen and (max-width: 736px) {
-				/* 1. Hide the hamburger menu button completely */
+				/* 1. Hide the hamburger menu */
 				#navPanelToggle {
 					display: none !important;
 				}
-				
-				/* 2. Force the main navigation bar to appear */
+		
+				/* 2. Force the nav bar to show with a solid white background */
 				#nav {
 					display: block !important;
+					background-color: #ffffff !important; 
+					border-top: 1px solid #eeeeee !important;
+					border-bottom: 1px solid #eeeeee !important;
 					padding: 0 !important;
+					margin: 0 !important;
 				}
-				
-				/* 3. Arrange the links in a neat, full-width row */
+		
+				/* 3. Arrange the list horizontally */
 				#nav > .links {
 					display: flex !important;
 					flex-direction: row !important;
-					justify-content: space-between !important;
 					width: 100% !important;
 					margin: 0 !important;
 					padding: 0 !important;
 				}
-				
-				/* 4. Style each button to fill the space evenly */
+		
+				/* 4. Make the buttons fill the space evenly with separator lines */
 				#nav > .links > li {
-					flex: 1 1 auto !important;
-					display: block !important;
+					flex: 1 1 33% !important;
 					text-align: center !important;
-					border-left: none !important; /* Removes default template lines */
+					padding: 0 !important;
+					margin: 0 !important;
+					border-left: 1px solid #eeeeee !important; 
 				}
-				
-				/* 5. Adjust the text size and padding so all 3 fit on a phone screen */
+				#nav > .links > li:first-child {
+					border-left: none !important; /* Removes line from the far left */
+				}
+		
+				/* 5. Force the text to be VISIBLE, dark, and sized correctly */
 				#nav > .links > li > a {
 					display: block !important;
 					padding: 15px 2px !important;
-					font-size: 0.75rem !important;
+					font-size: 0.65rem !important;
+					font-weight: 800 !important;
+					color: #212931 !important; /* Forces text to be dark grey */
+					text-transform: uppercase !important;
 					letter-spacing: 1px !important;
+					white-space: nowrap !important; /* Stops text from breaking onto two lines */
 				}
-
-				/* 6. Hide the social media icons in the top bar on mobile to save space */
+		
+				/* 6. Highlight the page you are currently on */
+				#nav > .links > li.active > a {
+					background-color: #f5f5f5 !important; /* Slight grey background */
+				}
+		
+				/* 7. Hide the social icons to save space */
 				#nav > .icons {
 					display: none !important;
 				}
