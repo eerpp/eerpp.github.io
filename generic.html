@@ -6,11 +6,65 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
+		<title>Personal web-portfolio of Eero Moisio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+			/* Hide our custom menu on desktop */
+			#custom-mobile-menu {
+				display: none;
+			}
+
+			@media screen and (max-width: 736px) {
+				/* 1. Show our custom menu on mobile and lock it to the top */
+				#custom-mobile-menu {
+					display: flex !important;
+					position: fixed !important;
+					top: 0 !important;
+					left: 0 !important;
+					width: 100% !important;
+					height: 55px !important;
+					background-color: #ffffff !important;
+					z-index: 10000 !important;
+					box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
+				}
+
+				/* 2. Style the links inside our custom menu */
+				#custom-mobile-menu a {
+					flex: 1 !important;
+					display: flex !important;
+					align-items: center !important;
+					justify-content: center !important;
+					text-decoration: none !important;
+					color: #111111 !important;
+					font-size: 0.65rem !important;
+					font-weight: 800 !important;
+					text-transform: uppercase !important;
+					border-left: 1px solid #e0e0e0 !important;
+					letter-spacing: 1px !important;
+					text-align: center !important;
+				}
+				#custom-mobile-menu a:first-child {
+					border-left: none !important;
+				}
+				#custom-mobile-menu a.active {
+					background-color: #f1f1f1 !important;
+				}
+
+				/* 3. Completely hide all of the template's original mobile menu elements */
+				#nav, #navPanel, #navPanelToggle, #titleBar {
+					display: none !important;
+				}
+
+				/* 4. Push the page down so nothing gets covered up */
+				body {
+					padding-top: 55px !important;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -38,6 +92,12 @@
 					</nav>
 
 				<!-- Main -->
+					<div id="custom-mobile-menu">
+							<a href="index.html" class="active">Projects</a>
+							<a href="generic.html">Career</a>
+							<a href="elements.html">Hobbies</a>
+						</div>
+	
 					<div id="main">
 
 						<!-- Post -->
