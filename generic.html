@@ -49,23 +49,50 @@
 								</header>
 								
 								<p>Master's thesis worker since 12/2025. AMLaboratory, Quantifying the impacts of different coarse modeling choices on vehicle energy consumption estimates. Thesis focuses on energy consumption effect of Finnish envireonment's low ambient temperatures as well as looks at the effect and charasteristicks of hybrid powertrains.</p>
+								<style>
+								    /* This special CSS will only affect our "balanced-gallery" row */
+								    .balanced-gallery img {
+								        /* Force every image in this row to have the exact same professional height */
+								        height: 350px !important; 
+								        
+								        /* The secret weapon: force the image to fill the box neatly, cropping it without stretching. */
+								        object-fit: cover !important; 
+								        
+								        /* Make sure the focus stays centered on the key parts of your images */
+								        object-position: center !important; 
+								        
+								        /* Add a very subtle rounding for a premium finish */
+								        border-radius: 8px;
+								        box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+								        
+								        /* Smooth hover animation */
+								        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+								    }
+								    
+								    .balanced-gallery img:hover {
+								        transform: scale(1.02); /* Slight scale up on hover */
+								        box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* deeper shadow on hover */
+								    }
+								</style>
+								
+								<h3>Project Showcase Grid</h3>
 								<div class="box alt">
-								    <div class="row gtr-50 gtr-uniform">
+								    <div class="row gtr-50 gtr-uniform balanced-gallery">
 								        
-								        <div class="col-3">
-								            <span class="image fit"><img src="images/lemmi_towers.jpeg" alt="" /></span>
+								        <div class="col-6">
+								            <span class="image fit"><img src="images/lemmi_towers.jpeg" alt="LEM Towers Front View" /></span>
 								        </div>
 								        
-								        <div class="col-3">
-								            <span class="image fit"><img src="images/return_pump_logic.jpeg" alt="" /></span>
+								        <div class="col-6">
+								            <span class="image fit"><img src="images/return_pump_logic.jpeg" alt="Return Pump Logic PCB" /></span>
 								        </div>
 								        
-								        <div class="col-3">
-								            <span class="image fit"><img src="images/okerman.jpg" alt="" /></span>
+								        <div class="col-6">
+								            <span class="image fit"><img src="images/lemmi_back.jpeg" alt="LEM Towers Rear View" /></span>
 								        </div>
 								
-								        <div class="col-3">
-								            <span class="image fit"><img src="images/lemmi_back.jpeg" alt="" /></span>
+								        <div class="col-6">
+								            <span class="image fit"><img src="images/okerman.jpg" alt="Okerman Excavator on Site" /></span>
 								        </div>
 								        
 								    </div>
