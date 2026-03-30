@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Personal web-portfolio of Eero Moisio</title>
@@ -13,13 +8,14 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
 		<style>
-			/* Hide our custom menu on desktop */
+			/* ========================================= */
+			/* 1. CUSTOM MOBILE MENU CSS                 */
+			/* ========================================= */
 			#custom-mobile-menu {
 				display: none;
 			}
 
 			@media screen and (max-width: 736px) {
-				/* 1. Show our custom menu on mobile and lock it to the top */
 				#custom-mobile-menu {
 					display: flex !important;
 					position: fixed !important;
@@ -32,7 +28,6 @@
 					box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
 				}
 
-				/* 2. Style the links inside our custom menu */
 				#custom-mobile-menu a {
 					flex: 1 !important;
 					display: flex !important;
@@ -54,14 +49,35 @@
 					background-color: #f1f1f1 !important;
 				}
 
-				/* 3. Completely hide all of the template's original mobile menu elements */
 				#nav, #navPanel, #navPanelToggle, #titleBar {
 					display: none !important;
 				}
 
-				/* 4. Push the page down so nothing gets covered up */
 				body {
 					padding-top: 55px !important;
+				}
+			}
+
+			/* ========================================= */
+			/* 2. BALANCED GALLERY CSS (Photos & Videos) */
+			/* ========================================= */
+			.balanced-gallery img, .balanced-gallery iframe {
+				height: 350px !important; 
+				width: 100% !important;
+				object-fit: cover !important; 
+				object-position: center !important; 
+				border-radius: 8px;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+				border: none !important; 
+				transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+			}
+			
+			.balanced-gallery img:hover, .balanced-gallery iframe:hover {
+				transform: scale(1.02); 
+				box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+			}
+		</style>
+	</head>
 				}
 			}
 		</style>
@@ -73,7 +89,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Work experince and academic career</a>
+						<a href="index.html" class="logo">Personal projects and hobbies</a>
 					</header>
 
 				<!-- Nav -->
@@ -107,6 +123,118 @@
 					<div id="main">
 
 						<!-- Post -->
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"></span>
+									<h1>Personal projects</h1>
+								</header>
+
+								<h4>FluPo robot</h4>
+								
+								<p>FluPo robot is a gadget inspired by a vision for a mascot for the hyhdraulic laboratory of Aalto. FluPo embodies the essense of a benign seal hat barely manages to make its way around. The FluPo idea is a work in progress, and will hopefully gain attention and support amongst the Mechatronics research group in Aalto.</p>
+								<p>FluPo runs an esp32, two N20 Dc motors, L9110S Dual Channel H-Bridge Motor Driver module, and a 1S-lipo. The robot is remotely controller over wifi utilizing ROS2 and controlled using xbox controller.</p>
+								
+								<style>
+								    /* This special CSS will only affect our "balanced-gallery" row */
+								    .balanced-gallery img {
+								        /* Force every image in this row to have the exact same professional height */
+								        height: 350px !important; 
+								        
+								        /* The secret weapon: force the image to fill the box neatly, cropping it without stretching. */
+								        object-fit: cover !important; 
+								        
+								        /* Make sure the focus stays centered on the key parts of your images */
+								        object-position: center !important; 
+								        
+								        /* Add a very subtle rounding for a premium finish */
+								        border-radius: 8px;
+								        box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+								        
+								        /* Smooth hover animation */
+								        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+								    }
+								    
+								    .balanced-gallery img:hover {
+								        transform: scale(1.02); /* Slight scale up on hover */
+								        box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* deeper shadow on hover */
+								    }
+								</style>
+								
+								<h5>FluPo media</h5>
+									<div class="box alt">
+									    <div class="row gtr-50 gtr-uniform balanced-gallery">
+									        
+									        <div class="col-6">
+									            <iframe src="https://www.youtube.com/embed/OR02MXo49SQ" allowfullscreen></iframe>
+									        </div>
+									        
+									        <div class="col-6">
+									            <span class="image fit"><img src="images/flupo_motor.jpeg" alt="Return Pump Logic PCB" /></span>
+									        </div>
+									
+									        <div class="col-6">
+									            <span class="image fit"><img src="images/seal.jpg" alt="Okerman Excavator on Site" /></span>
+									        </div>
+									        
+									        <div class="col-6">
+									            <span class="image fit"><img src="images/esp.jpeg" alt="LEM Towers Rear View" /></span>
+									        </div>
+									        
+									    </div>
+									</div><h4>Tensicon Oy</h4>
+								<p> Post-tensioning contruction worker at Tensicon Oy 2020-2024. Manufacturing, installing, and tensioning of various post tensioned structures, such as bridges, construction crance mountings, windmills and many others. Had the opportunity to travel across Finland building infrastructure in Turku, Vaasa, Raahe, Kärsämäki, Tampere, Jämsä, Kuopio, Joesnsuu, and all across the metropolian area. </p>
+
+								<style>
+								    /* This special CSS will only affect our "balanced-gallery" row */
+								    .balanced-gallery img {
+								        /* Force every image in this row to have the exact same professional height */
+								        height: 350px !important; 
+								        
+								        /* The secret weapon: force the image to fill the box neatly, cropping it without stretching. */
+								        object-fit: cover !important; 
+								        
+								        /* Make sure the focus stays centered on the key parts of your images */
+								        object-position: center !important; 
+								        
+								        /* Add a very subtle rounding for a premium finish */
+								        border-radius: 8px;
+								        box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+								        
+								        /* Smooth hover animation */
+								        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+								    }
+								    
+								    .balanced-gallery img:hover {
+								        transform: scale(1.02); /* Slight scale up on hover */
+								        box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* deeper shadow on hover */
+								    }
+								</style>
+								
+								<h5>Post-tensioning career</h5>
+								<div class="box alt">
+								    <div class="row gtr-50 gtr-uniform balanced-gallery">
+								        
+								        <div class="col-6">
+								            <span class="image fit"><img src="images/kamppi_nosturi.jpeg" alt="LEM Towers Front View" /></span>
+								        </div>
+								        
+								        <div class="col-6">
+								            <span class="image fit"><img src="images/tensicon_selfie.jpeg" alt="Return Pump Logic PCB" /></span>
+								        </div>
+
+										<div class="col-6">
+								            <span class="image fit"><img src="images/flame_hammer.JPG" alt="Okerman Excavator on Site" /></span>
+								        </div>
+										
+								        <div class="col-6">
+								            <span class="image fit"><img src="images/pori_winter.jpeg" alt="LEM Towers Rear View" /></span>
+								        </div>
+								        
+								    </div>
+								</div>
+							
+							</section>
 							
 
 				<!-- Copyright -->
