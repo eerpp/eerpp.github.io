@@ -79,12 +79,22 @@
 				box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
 			}
 
-			/* Mobile-Specific Settings (FIXED FOR YOUTUBE SHORTS) */
+			/* Special formatting just for vertical YouTube Shorts on desktop */
+			.balanced-gallery iframe.yt-short {
+				width: auto !important; /* Stops it from stretching wide */
+				aspect-ratio: 9 / 16 !important; /* Forces the vertical shape */
+				margin: 0 auto !important; /* Centers the video in the column */
+				display: block !important;
+				background-color: #000000 !important;
+			}
+
+			/* Mobile-Specific Settings */
 			@media screen and (max-width: 736px) {
-				.balanced-gallery img, .balanced-gallery iframe {
+				/* We include .yt-short here so it knows to stretch full width on phones */
+				.balanced-gallery img, .balanced-gallery iframe, .balanced-gallery iframe.yt-short {
 					height: auto !important; 
 					aspect-ratio: 9 / 16 !important; 
-					width: 100% !important;
+					width: 100% !important; /* Forces everything to fill the screen width */
 					margin-bottom: 15px !important;
 					display: block !important;
 					background-color: #000000 !important;
@@ -143,7 +153,7 @@
 						<div class="row gtr-50 gtr-uniform balanced-gallery">
 							
 							<div class="col-6">
-								<iframe src="https://www.youtube.com/embed/OR02MXo49SQ?autoplay=1&mute=1&loop=1&playlist=OR02MXo49SQ" allow="autoplay; fullscreen" allowfullscreen></iframe>
+								<iframe class="yt-short" src="https://www.youtube.com/embed/KASaZ1LAq40?autoplay=1&mute=1&loop=1&playlist=KASaZ1LAq40" allow="autoplay; fullscreen" allowfullscreen></iframe>
 							</div>
 							
 							<div class="col-6">
@@ -173,11 +183,11 @@
 							</div>
 							
 							<div class="col-6">
-								<iframe src="https://www.youtube.com/embed/1KoBnRm-fFQ?autoplay=1&mute=1&loop=1&playlist=1KoBnRm-fFQ" allow="autoplay; fullscreen" allowfullscreen></iframe>
+								<iframe class="yt-short" src="https://www.youtube.com/embed/1KoBnRm-fFQ?autoplay=1&mute=1&loop=1&playlist=1KoBnRm-fFQ" allow="autoplay; fullscreen" allowfullscreen></iframe>
 							</div>
 							
 							<div class="col-6">
-								<iframe src="https://www.youtube.com/embed/bB_dOzumk4Y?autoplay=1&mute=1&loop=1&playlist=bB_dOzumk4Y" allow="autoplay; fullscreen" allowfullscreen></iframe>
+								<iframe class="yt-short" src="https://www.youtube.com/embed/bB_dOzumk4Y?autoplay=1&mute=1&loop=1&playlist=bB_dOzumk4Y" allow="autoplay; fullscreen" allowfullscreen></iframe>
 							</div>
 									
 							<div class="col-6">
