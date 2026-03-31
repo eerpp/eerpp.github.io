@@ -56,13 +56,6 @@
 				body {
 					padding-top: 55px !important;
 				}
-
-				/* FIX: Forces the images/video to be shorter and more square on phones */
-				.balanced-gallery img, 
-				.balanced-gallery iframe, 
-				.balanced-gallery span.image.fit {
-					height: 200px !important; 
-				}
 			}
 
 			/* ========================================= */
@@ -86,14 +79,17 @@
 				box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
 			}
 
-			/* Mobile-Specific Settings */
+			/* Mobile-Specific Settings (FIXED FOR YOUTUBE SHORTS) */
 			@media screen and (max-width: 736px) {
 				.balanced-gallery img, .balanced-gallery iframe {
-					height: 160px !important; /* Shrinks height to make them neat squares on phones */
-					margin-bottom: 15px !important; /* Pushes the text down so it cannot overlap */
+					height: auto !important; /* Removes the hardcoded height */
+					aspect-ratio: 9 / 16 !important; /* Forces exact YouTube Shorts shape */
+					width: 100% !important;
+					margin-bottom: 15px !important;
+					display: block !important;
 				}
 				
-				/* Optional: Forces the grid to behave if the template tries to break it */
+				/* Forces the grid to behave if the template tries to break it */
 				.balanced-gallery {
 					display: flex !important;
 					flex-wrap: wrap !important;
