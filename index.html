@@ -111,6 +111,45 @@
 					margin-bottom: 20px !important;
 				}
 			}
+							/* ========================================= */
+				/* 3. PROFILE PICTURE CSS                    */
+				/* ========================================= */
+				.profile-pic-container {
+				    margin-bottom: 2rem;
+				    display: flex;
+				    justify-content: center;
+				    z-index: 1; /* Ensures it stays above background elements */
+				    position: relative;
+				}
+				
+				.profile-pic {
+				    width: 220px;
+				    height: 220px;
+				    border-radius: 50%; /* Makes it a perfect circle */
+				    object-fit: cover; /* Prevents image distortion */
+				    object-position: center;
+				    border: 4px solid rgba(255, 255, 255, 0.8); /* Clean, semi-transparent border */
+				    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft drop shadow for depth */
+				    transition: transform 0.4s ease, box-shadow 0.4s ease;
+				}
+				
+				/* Subtle interactive hover effect */
+				.profile-pic:hover {
+				    transform: scale(1.05);
+				    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+				}
+				
+				/* Mobile-Specific Adjustments */
+				@media screen and (max-width: 736px) {
+				    .profile-pic-container {
+				        margin-bottom: 1.5rem;
+				    }
+				    .profile-pic {
+				        width: 150px;
+				        height: 150px;
+				        border-width: 3px;
+				    }
+				}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -120,12 +159,16 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Eero<br />
-						Moisio</h1>
-						<p>B.Sc Mechanical engineering, M.Sc student Mechatronics <a href="https://html5up.net/license"> Creative Commons license</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+    
+					    <div class="profile-pic-container">
+					        <img src="images/eero_moisio.jpg" alt="Eero Moisio" class="profile-pic" />
+					    </div>
+					
+					    <h1>Eero<br /><br>Moisio</h1>
+					    <p>B.Sc Mechanical engineering, M.Sc student Mechatronics <a href="https://html5up.net/license"> Creative Commons license</a>.</p>
+					    <ul class="actions">
+					        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					    </ul>
 					</div>
 
 				<!-- Header -->
