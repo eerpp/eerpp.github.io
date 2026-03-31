@@ -82,11 +82,12 @@
 			/* Mobile-Specific Settings (FIXED FOR YOUTUBE SHORTS) */
 			@media screen and (max-width: 736px) {
 				.balanced-gallery img, .balanced-gallery iframe {
-					height: auto !important; /* Removes the hardcoded height */
-					aspect-ratio: 9 / 16 !important; /* Forces exact YouTube Shorts shape */
+					height: auto !important; 
+					aspect-ratio: 9 / 16 !important; 
 					width: 100% !important;
 					margin-bottom: 15px !important;
 					display: block !important;
+					background-color: #000000 !important; /* <--- THIS FIXES THE WHITE BOX */
 				}
 				
 				/* Forces the grid to behave if the template tries to break it */
@@ -95,6 +96,7 @@
 					flex-wrap: wrap !important;
 					margin-bottom: 20px !important;
 				}
+			}
 			}
 		</style>
 	</head>
