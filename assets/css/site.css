@@ -689,7 +689,8 @@ h1, h2, h3, h4 {
 /* --- Responsive --------------------------------------------------------- */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-portrait { order: -1; width: min(220px, 60%); justify-self: start; }
+  .hero-portrait { order: -1; width: min(220px, 60%); justify-self: center; }
+  .hero .eyebrow, .hero h1 { text-align: center; }
   .role { grid-template-columns: 1fr; gap: 0.35rem; }
   .role > *, .role > .role-date { grid-column: 1; }
   .role > .role-date { grid-row: auto; }
