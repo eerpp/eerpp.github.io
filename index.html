@@ -1,374 +1,181 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Personal web-portfolio of Eero Moisio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-		<style>
-			/* ========================================= */
-			/* 1. CUSTOM MOBILE MENU CSS                 */
-			/* ========================================= */
-			#custom-mobile-menu {
-				display: none;
-			}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eero Moisio — Mechatronics portfolio</title>
+<meta name="description" content="Portfolio of Eero Moisio - doctoral researcher at the Fluid Power Laboratory, Aalto University, studying powertrain solutions for heavy machinery.">
+<meta name="author" content="Eero Moisio">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eero Moisio — Mechatronics portfolio">
+<meta property="og:description" content="Portfolio of Eero Moisio - doctoral researcher at the Fluid Power Laboratory, Aalto University, studying powertrain solutions for heavy machinery.">
+<meta property="og:image" content="https://eerpp.github.io/images/opt/eero_moisio_2026.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0b0e'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='%23ff7a33' text-anchor='middle'%3EEM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
 
-			@media screen and (max-width: 736px) {
-				#custom-mobile-menu {
-					display: flex !important;
-					position: fixed !important;
-					top: 0 !important;
-					left: 0 !important;
-					width: 100% !important;
-					height: 55px !important;
-					background-color: #ffffff !important;
-					z-index: 10000 !important;
-					box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
-				}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="mark">EM</span> Eero Moisio</a>
+    <nav class="nav" id="nav" aria-label="Main">
+            <a href="index.html" aria-current="page">Projects</a>
+            <a href="work.html">Work</a>
+            <a href="hobbies.html">Hobbies</a>
+    </nav>
+    <div class="header-tools">
+      <a class="icon-btn" href="https://github.com/eerpp" aria-label="GitHub profile" rel="me noopener" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg></a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch to light theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3.5 7h17M3.5 12h17M3.5 17h17"/></svg></button>
+    </div>
+  </div>
+</header>
 
-				#custom-mobile-menu a {
-					flex: 1 !important;
-					display: flex !important;
-					align-items: center !important;
-					justify-content: center !important;
-					text-decoration: none !important;
-					color: #111111 !important;
-					font-size: 0.65rem !important;
-					font-weight: 800 !important;
-					text-transform: uppercase !important;
-					border-left: 1px solid #e0e0e0 !important;
-					letter-spacing: 1px !important;
-					text-align: center !important;
-				}
-				#custom-mobile-menu a:first-child {
-					border-left: none !important;
-				}
-				#custom-mobile-menu a.active {
-					background-color: #f1f1f1 !important;
-				}
+<main id="main">
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">Doctoral researcher</p>
+        <h1>
+          <span class="line"><span>Eero</span></span>
+          <span class="line"><span>Moisio</span></span>
+        </h1>
+        <p class="lede">M.Sc. in Mechatronics, B.Sc. in Mechanical Engineering. I am a doctoral
+          researcher at the Fluid Power Laboratory of Aalto University, where I study powertrain
+          solutions for heavy machinery. Outside the lab, my passion is mechatronic systems of all
+          kinds &mdash; working on (trying to maintain) personal vehicles, building autonomous
+          robots, and competing in RC racing.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See the projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="work.html">Work experience</a>
+        </div>
+      </div>
+      <figure class="hero-portrait">
+        <img src="images/opt/eero_moisio_2026.jpg" width="960"
+             height="1200"
+             alt="Eero Moisio at the FinnMETKO forestry machinery expo, in front of a Ponsse forwarder"
+             fetchpriority="high">
+      </figure>
+    </div>
+    <div class="container">
+      <dl class="specs" data-reveal>
+        <div class="spec"><dt>Position</dt><dd>Doctoral researcher</dd></div>
+        <div class="spec"><dt>Research</dt><dd>Powertrain solutions for heavy machinery</dd></div>
+        <div class="spec"><dt>Laboratory</dt><dd>Fluid Power, Aalto University</dd></div>
+        <div class="spec"><dt>Degrees</dt><dd>M.Sc. Mechatronics &middot; B.Sc. Mech. Eng.</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2>Selected projects</h2>
+        <span class="count">04 entries</span>
+      </div>
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">01</span>
+          <h3>Bosch Future Mobility Challenge</h3>
+          <p class="entry-meta">Aalto team · 2026</p>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>The goal of the BFMC competition is to build an autonomous RC car that is able to navigate the track built by Bosch. Our car could lane-keep, recognize traffic signs and pedestrians using a YOLO model, localize itself with a combination of GPS, IMU and wheel encoder data, perform parking maneuvers and much more.</p>
+          <p>The Aalto 2026 team qualified for the finals in Romania, where we placed 14th &mdash; we did not manage a top-8 finish, but the trip was great and we had a good time. The full standings are on the <a href="https://boschfuturemobility.com/results-2026/" target="_blank" rel="noopener">Bosch Future Mobility Challenge results page</a>.</p>
+          <ul class="tags"><li>Autonomous driving</li><li>YOLO</li><li>GPS + IMU</li><li>Wheel odometry</li><li>Lane keeping</li></ul>
+        </div>
+        <div class="media-grid" data-count="5" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/bfmc_team.jpg" data-caption="The Aalto team at the BFMC 2026 finals in Cluj, Romania"><img src="images/opt/bfmc_team.jpg" width="1200" height="801" loading="lazy" decoding="async" alt="The Aalto team at the BFMC 2026 finals in Cluj, Romania"></button>
+          <button class="tile" type="button" data-full="images/opt/bfmc_car_body_on.jpg" data-caption="BFMC competition car with its body shell fitted"><img src="images/opt/bfmc_car_body_on.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="BFMC competition car with its body shell fitted"></button>
+          <button class="tile" type="button" data-full="images/opt/bfmc_setting.jpg" data-caption="The BFMC test track laid out in the workshop, with the team working behind it"><img src="images/opt/bfmc_setting.jpg" width="675" height="1200" loading="lazy" decoding="async" alt="The BFMC test track laid out in the workshop, with the team working behind it"></button>
+          <button class="tile" type="button" data-full="images/opt/bfm_car_no_body.jpg" data-caption="The BFMC car with the body removed, showing the internals"><img src="images/opt/bfm_car_no_body.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="The BFMC car with the body removed, showing the internals"></button>
+          <button class="tile tile-video" type="button" data-video="CyIY3IMX1ho" data-orientation="landscape" data-caption="BFMC — project video"><img src="https://i.ytimg.com/vi/CyIY3IMX1ho/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="BFMC — project video"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">02</span>
+          <h3>Hydraulic press build</h3>
+          <span></span>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>Hydraulic horseshoe bending machine designed to allow a farrier to shape horseshoes without the use of a hammer or heating the metal. The project was successful and was able to shape horseshoes with ease. The machine was taken into use by an actual farrier, adding to his mobile arsenal of horseshoe shaping tools.</p>
+          <ul class="tags"><li>Hydraulics</li><li>Mechanical design</li><li>Fabrication</li><li>Cold forming</li></ul>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/hydraulic_press.jpg" data-caption="The hydraulic horseshoe bending press"><img src="images/opt/hydraulic_press.jpg" width="1200" height="797" loading="lazy" decoding="async" alt="The hydraulic horseshoe bending press"></button>
+          <button class="tile" type="button" data-full="images/opt/horseshoemachine.jpg" data-caption="The horseshoe bending machine"><img src="images/opt/horseshoemachine.jpg" width="1200" height="797" loading="lazy" decoding="async" alt="The horseshoe bending machine"></button>
+          <button class="tile" type="button" data-full="images/opt/horseshoe_building.jpg" data-caption="Building the horseshoe press"><img src="images/opt/horseshoe_building.jpg" width="675" height="1200" loading="lazy" decoding="async" alt="Building the horseshoe press"></button>
+          <button class="tile tile-video" type="button" data-video="70sn44dzlV0" data-orientation="landscape" data-caption="Hydraulic press — project video"><img src="https://i.ytimg.com/vi/70sn44dzlV0/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Hydraulic press — project video"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">03</span>
+          <h3>Drive-by-wire kit</h3>
+          <p class="entry-meta">Mechatronics project course · 2025</p>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>A ROS 2 based system that allows for operation of a vehicle&#x27;s wheel and pedals with a digital input. The system uses a rotary actuator to turn the wheel, and linear actuators to operate the gas and the brake pedal. The input used for the showcase video is a gamepad controller. YOLO based machine vision control was also performed. The system achieved reasonable control over a Saab 900 in slow speed operation; limited actuator speed on the wheel and pedals hinders current performance.</p>
+          <p>This drive-by-wire kit was part of the Mechatronics project course of 2025. A memorable visit to Tallinn to attend the Modern Materials &amp; Manufacturing 2025 conference, where we showcased the results of the project, was part of the experience.</p>
+          <ul class="tags"><li>ROS 2</li><li>YOLO</li><li>Rotary + linear actuators</li><li>Saab 900</li></ul>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/saab_crew.jpg" data-caption="The drive-by-wire team with the Saab 900"><img src="images/opt/saab_crew.jpg" width="661" height="428" loading="lazy" decoding="async" alt="The drive-by-wire team with the Saab 900"></button>
+          <button class="tile" type="button" data-full="images/opt/saab_YOLO.jpg" data-caption="YOLO detection output from the drive-by-wire vehicle"><img src="images/opt/saab_YOLO.jpg" width="507" height="279" loading="lazy" decoding="async" alt="YOLO detection output from the drive-by-wire vehicle"></button>
+          <button class="tile" type="button" data-full="images/opt/saab_forest.jpg" data-caption="The Saab 900 test vehicle"><img src="images/opt/saab_forest.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="The Saab 900 test vehicle"></button>
+          <button class="tile tile-video" type="button" data-video="b73bDRwR4ro" data-orientation="landscape" data-caption="Drive-by-wire — project video"><img src="https://i.ytimg.com/vi/b73bDRwR4ro/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Drive-by-wire — project video"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">04</span>
+          <h3>RC car wind tunnel</h3>
+          <span></span>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>A wind tunnel built with a four-point scale to measure the weight and the effect of downforce on each wheel. The tunnel was powered by an automotive cooling fan, achieving wind speeds of around 10 m/s. An Arduino, in combination with four strain gauges, was used to measure the individual wheels, as well as to perform PWM control over a MOSFET in order to control wind speed.</p>
+          <p>The obtained data clearly showed the aerodynamic effect on the tested RC cars. Surprisingly, a conventional passenger-vehicle-shaped RC car ended up creating lift instead of downforce, and adding a wing only reduced the lift. The formula style car shown in the photo was the only tested RC car to create downforce.</p>
+          <ul class="tags"><li>Arduino</li><li>Strain gauges</li><li>MOSFET PWM</li><li>Aerodynamics</li></ul>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/rc_windtunnel.jpg" data-caption="The RC car wind tunnel with its four-point scale"><img src="images/opt/rc_windtunnel.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="The RC car wind tunnel with its four-point scale"></button>
+          <button class="tile" type="button" data-full="images/opt/wt_bmw_car.jpg" data-caption="The BMW E30 shell on the four-point scale in the tunnel, rear wing fitted"><img src="images/opt/wt_bmw_car.jpg" width="1045" height="533" loading="lazy" decoding="async" alt="The BMW E30 shell on the four-point scale in the tunnel, rear wing fitted"></button>
+          <button class="tile is-chart" type="button" data-full="images/opt/wt_bmw_e30.png" data-caption="BMW E30 shell: every configuration produced lift, and the wings only reduced it"><img src="images/opt/wt_bmw_e30.png" width="1331" height="888" loading="lazy" decoding="async" alt="BMW E30 shell: every configuration produced lift, and the wings only reduced it"></button>
+          <button class="tile is-chart" type="button" data-full="images/opt/wt_formula.png" data-caption="Formula car: lift without a wing, real downforce with either the fixed or the adjustable wing"><img src="images/opt/wt_formula.png" width="1331" height="888" loading="lazy" decoding="async" alt="Formula car: lift without a wing, real downforce with either the fixed or the adjustable wing"></button>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
 
-				#nav, #navPanel, #navPanelToggle, #titleBar {
-					display: none !important;
-				}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Eero Moisio &middot; hosted on GitHub Pages</p>
+    <div class="footer-links">
+      <a class="icon-btn" href="https://github.com/eerpp" aria-label="GitHub profile" rel="me noopener" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg></a>
+      <!-- Add LinkedIn / email here if you want them public:
+      <a class="icon-btn" href="https://www.linkedin.com/in/USERNAME" aria-label="LinkedIn">...</a> -->
+    </div>
+  </div>
+</footer>
 
-				body {
-					padding-top: 55px !important;
-				}
-			}
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <button class="lightbox-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="lightbox-stage">
+    <p class="lightbox-caption"></p>
+    <a class="lightbox-fallback" target="_blank" rel="noopener" hidden>Watch on YouTube &#8599;</a>
+  </div>
+</div>
 
-			/* ========================================= */
-			/* 2. BALANCED GALLERY CSS (Photos & Videos) */
-			/* ========================================= */
-			
-			/* Default Desktop Settings */
-			.balanced-gallery img, .balanced-gallery iframe {
-				height: 350px !important; 
-				width: 100% !important;
-				object-fit: cover !important; 
-				object-position: center !important; 
-				border-radius: 8px;
-				box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
-				border: none !important; 
-				transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-			}
-			
-			.balanced-gallery img:hover, .balanced-gallery iframe:hover {
-				transform: scale(1.02); 
-				box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
-			}
-
-			/* Special formatting just for vertical YouTube Shorts on desktop */
-			.balanced-gallery iframe.yt-short {
-				width: auto !important; /* Stops it from stretching wide */
-				aspect-ratio: 9 / 16 !important; /* Forces the vertical shape */
-				margin: 0 auto !important; /* Centers the video in the column */
-				display: block !important;
-				background-color: #000000 !important;
-			}
-
-			/* Mobile-Specific Settings */
-			@media screen and (max-width: 736px) {
-				/* We include .yt-short here so it knows to stretch full width on phones */
-				.balanced-gallery img, .balanced-gallery iframe, .balanced-gallery iframe.yt-short {
-					height: auto !important; 
-					aspect-ratio: 9 / 16 !important; 
-					width: 100% !important; /* Forces everything to fill the screen width */
-					margin-bottom: 15px !important;
-					display: block !important;
-					background-color: #000000 !important;
-				}
-				
-				.balanced-gallery {
-					display: flex !important;
-					flex-wrap: wrap !important;
-					margin-bottom: 20px !important;
-				}
-			}
-							/* ========================================= */
-				/* 3. PROFILE PICTURE CSS                    */
-				/* ========================================= */
-				.profile-pic-container {
-				    margin-bottom: 2rem;
-				    display: flex;
-				    justify-content: center;
-				    z-index: 1; /* Ensures it stays above background elements */
-				    position: relative;
-				}
-				
-				.profile-pic {
-				    width: 220px;
-				    height: 220px;
-				    border-radius: 50%; /* Makes it a perfect circle */
-				    object-fit: cover; /* Prevents image distortion */
-				    object-position: center;
-				    border: 4px solid rgba(255, 255, 255, 0.8); /* Clean, semi-transparent border */
-				    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft drop shadow for depth */
-				    transition: transform 0.4s ease, box-shadow 0.4s ease;
-				}
-				
-				/* Subtle interactive hover effect */
-				.profile-pic:hover {
-				    transform: scale(1.05);
-				    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-				}
-				
-				/* Mobile-Specific Adjustments */
-				@media screen and (max-width: 736px) {
-				    .profile-pic-container {
-				        margin-bottom: 1.5rem;
-				    }
-				    .profile-pic {
-				        width: 150px;
-				        height: 150px;
-				        border-width: 3px;
-				    }
-				}
-		</style>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-    
-					    <div class="profile-pic-container">
-					        <img src="images/eero_moisio.jpg" alt="Eero Moisio" class="profile-pic" />
-					    </div>
-					
-					    <h1>Eero<br /><br>Moisio</h1>
-					    <p>B.Sc Mechanical engineering, M.Sc student Mechatronics <a href="https://html5up.net/license"> Creative Commons license</a>.</p>
-					    <ul class="actions">
-					        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-					    </ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							<li><a href="generic.html">Work Experience</a></li>
-							<li><a href="elements.html">Hobbies/interests</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="javascript:void(0);" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="javascript:void(0);" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="javascript:void(0);" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="javascript:void(0);" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="custom-mobile-menu">
-							<a href="index.html" class="active">Projects</a>
-							<a href="generic.html">Work Experience</a>
-							<a href="elements.html">Hobbies</a>
-						</div>
-	
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date"></span>
-									<h2><a href="javascript:void(0);">List of projects</a></h2>
-									<h2><a href="javascript:void(0);">                </a></h2>
-									
-									
-								</header>
-
-								<header class="major">
-									<span class="date"></span>
-									<h3><a href="javascript:void(0);">Bosch Future Mobility Challenge (BFMC)</a></h3>
-									
-								</header>
-								
-								<p>The goal of the BFMC competition is to build an autonomous RC car that is able to navigate the track built by Bosch. The Aalto 2026 team has so far qualified to the finals, which will be held in Romania in the middle of May. Out team's car is currently able to lanekeep, recognize traffic signs and pedestrians using Yolo model, localize itself with a combination of GPS, IMU and wheel encoder data, perform parking maneuver and much more. We hope to challenge the top teams this year at the finals!</p>
-									<style>
-								    /* This special CSS will only affect our "balanced-gallery" row */
-								    .balanced-gallery img {
-								        /* Force every image in this row to have the exact same professional height */
-								        height: 350px !important; 
-								        
-								        /* The secret weapon: force the image to fill the box neatly, cropping it without stretching. */
-								        object-fit: cover !important; 
-								        
-								        /* Make sure the focus stays centered on the key parts of your images */
-								        object-position: center !important; 
-								        
-								        /* Add a very subtle rounding for a premium finish */
-								        border-radius: 8px;
-								        box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-								        
-								        /* Smooth hover animation */
-								        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-								    }
-								    
-								    .balanced-gallery img:hover {
-								        transform: scale(1.02); /* Slight scale up on hover */
-								        box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* deeper shadow on hover */
-								    }
-								</style>
-								
-								<h5>BFMC media</h5>
-								<div class="box alt">
-								    <div class="row gtr-50 gtr-uniform balanced-gallery">
-								        
-								        <div class="col-6">
-								            <span class="image fit"><img src="images/bfmc_car_body_on.jpeg" alt="LEM Towers Front View" /></span>
-								        </div>
-								        
-								        <div class="col-6">
-								            <span class="image fit"><img src="images/bfmc_setting.jpeg" alt="Return Pump Logic PCB" /></span>
-								        </div>
-
-										<div class="col-6">
-								            <span class="image fit"><img src="images/bfm_car_no_body.jpeg" alt="bfmc car no body on" /></span>
-								        </div>
-										
-										<div class="col-6">
-											<iframe src="https://www.youtube.com/embed/CyIY3IMX1ho?autoplay=1&mute=1&loop=1&playlist=CyIY3IMX1ho" allow="autoplay; fullscreen" allowfullscreen></iframe>
-										</div>
-								        
-								    </div>
-								</div>
-
-								<header class="major">
-									
-									<h3><a href="javascript:void(0);">Hydraulic Press Build</a></h3>
-									
-								</header>
-
-								<p>Hydraulic horseshoe bending machine designed to allow farrier to shape horseshoes without the use of a hammer or heating the metal. The project was successful and was able to shape horseshoes with ease. The project was taken into use by an actual farrier, adding to his mobile arsenal of horseshoe shaping tools.</p>
-								
-								<h5>Hydraulic press channel media</h5>
-								<div class="box alt">
-								    <div class="row gtr-50 gtr-uniform balanced-gallery">
-								        
-								        <div class="col-6">
-								            <span class="image fit"><img src="images/hydraulic_press.jpg" alt="LEM Towers Front View" /></span>
-								        </div>
-								        
-								        <div class="col-6">
-								            <span class="image fit"><img src="images/horseshoemachine.jpg" alt="Return Pump Logic PCB" /></span>
-								        </div>
-
-										<div class="col-6">
-								            <span class="image fit"><img src="images/horseshoe_building.jpeg" alt="bfmc car no body on" /></span>
-								        </div>
-										
-										<div class="col-6">
-											<iframe src="https://www.youtube.com/embed/70sn44dzlV0?autoplay=1&mute=1&loop=1&playlist=70sn44dzlV0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-										</div>
-								        
-								    </div>
-
-								<header class="major">
-									
-									<h3><a href="javascript:void(0);">Drive by Wire kit</a></h3>
-									
-								</header>
-
-								<p>A ROS2 based system that allows for operation of vehicle wheel and pedals with a digital input. The system utilizes a rotary actuator to turn the wheel, and linear actuators to operate the gas and the brake pedal. The input used for the showcase video is a gamepad controller. YOLO based machine vision control was also perfromed. The system achieved reasonable control over a Saab 900 in slow speed operation. Limited speed of wheel and pedal actuators hinder current performance. This drive by wire kit was part of the Mechatronics project course of 2025. A memorable visit to Tallin in order to attend the modern materials & manufactoring 2025 conference where we showcased the results of the project was part of the experience.</p>
-								
-								<h5>DBW media</h5>
-								<div class="box alt">
-								    <div class="row gtr-50 gtr-uniform balanced-gallery">
-								        
-								        <div class="col-6">
-								            <span class="image fit"><img src="images/saab_crew.jpg" alt="LEM Towers Front View" /></span>
-								        </div>
-								        
-								        <div class="col-6">
-								            <span class="image fit"><img src="images/saab_YOLO.jpg" alt="Return Pump Logic PCB" /></span>
-								        </div>
-
-										<div class="col-6">
-								            <span class="image fit"><img src="images/saab_forest.jpeg" alt="bfmc car no body on" /></span>
-								        </div>
-										
-										<div class="col-6">
-											<iframe src="https://www.youtube.com/embed/b73bDRwR4ro?autoplay=1&mute=1&loop=1&playlist=b73bDRwR4ro" allow="autoplay; fullscreen" allowfullscreen></iframe>
-										</div>
-								        
-								    </div>
-							</article>
-
-
-							<article class="post featured">
-								<header class="major">
-									<span class="date"></span>
-									<h3><a href="javascript:void(0);">RC car windtunnel</a></h3>
-								</header>
-								<p>A windtunnel built with a four-point scale to measure the weight and effect of downforce for each wheel. The windtunnel was powered by an automotive cooling fan, achieving wind speeds of around 10 m/s. An arduino, in combination with four strain gauges, was used to measure the individual wheels, as well as perform PWM control over a mosfet in order to control wind speeds. The obtained data clearly showed the aerodynamic effect on tested RC cars. Surprisingly the result was that a conventional passenger vehicle shaped RC car ended up creating lift instead of downforce. The addition of a wing reduced the amount of lift created. The formula style car showcased in the photo was the only tested RC car to create downforce instead of lift.</p>
-								
-								<a href="javascript:void(0);" class="image main"><img src="images/rc_windtunnel.JPG" alt="Robotic Arm" /></a>
-								
-							</article>
-
-							
-	
-							
-
-							
-
-						<!-- Posts -->
-							
-
-						<!-- Footer -->
-							
-				<!-- Footer -->
-					
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	
-	</body>
+<script src="assets/js/site.js" defer></script>
+</body>
 </html>
