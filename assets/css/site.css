@@ -434,6 +434,15 @@ h1, h2, h3, h4 {
 .entry-body { max-width: var(--measure); margin-inline: auto; color: var(--text-dim); }
 .entry-body p + p { margin-top: 1rem; }
 
+/* Justified body copy. Hyphenation is not optional here: without it,
+   justifying a narrow column opens rivers of white space between words.
+   -webkit- prefix is still required for Safari/iOS. */
+.entry-body p, .role-body p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 /* Inline links in body copy */
 .entry-body a, .role-body a {
   color: var(--text);
