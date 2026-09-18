@@ -437,7 +437,7 @@ h1, h2, h3, h4 {
 /* Justified body copy. Hyphenation is not optional here: without it,
    justifying a narrow column opens rivers of white space between words.
    -webkit- prefix is still required for Safari/iOS. */
-.entry-body p, .role-body p {
+.entry-body p, .role-body p, .lede {
   text-align: justify;
   -webkit-hyphens: auto;
   hyphens: auto;
