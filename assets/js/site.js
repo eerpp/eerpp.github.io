@@ -15,6 +15,61 @@
     });
   }
 
+  /* --- Section router ---------------------------------------------------- */
+  /* All three sections live in this one document. Switching tabs shows one and
+     hides the others instead of loading a new page, so there is no reload
+     flash. Without JavaScript nothing is hidden and all three simply stack. */
+  var pages = [].slice.call(document.querySelectorAll('.page'));
+  var navLinks = [].slice.call(document.querySelectorAll('.nav a'));
+  var baseTitle = document.title;
+  var TITLES = {
+    projects: baseTitle,
+    work: 'Work experience \u2014 Eero Moisio',
+    hobbies: 'Hobbies & personal projects \u2014 Eero Moisio'
+  };
+
+  function isPage(slug) {
+    for (var i = 0; i < pages.length; i++) if (pages[i].id === slug) return true;
+    return false;
+  }
+
+  function show(slug, scroll) {
+    if (!isPage(slug)) slug = pages[0].id;
+    pages.forEach(function (p) {
+      var on = p.id === slug;
+      p.hidden = !on;
+      if (on) {
+        p.classList.remove('is-entering');
+        void p.offsetWidth;          // restart the entry animation
+        p.classList.add('is-entering');
+      }
+    });
+    navLinks.forEach(function (a) {
+      if (a.getAttribute('href') === '#' + slug) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
+    document.title = TITLES[slug] || baseTitle;
+    if (scroll) window.scrollTo({ top: 0, behavior: 'auto' });
+  }
+
+  if (pages.length > 1) {
+    show((location.hash || '').replace('#', ''), false);
+
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      var slug = a.getAttribute('href').slice(1);
+      if (!isPage(slug)) return;     // in-page anchors keep their normal behaviour
+      e.preventDefault();
+      if (location.hash !== '#' + slug) history.pushState(null, '', '#' + slug);
+      show(slug, true);
+    });
+
+    window.addEventListener('popstate', function () {
+      show((location.hash || '').replace('#', ''), true);
+    });
+  }
+
   /* --- Sticky header + scroll progress + hero parallax ------------------ */
   var header = document.querySelector('.site-header');
   var progress = document.querySelector('.progress');

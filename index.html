@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@600;700&amp;display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
-<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -27,9 +27,9 @@
   <div class="container header-inner">
     <a class="brand" href="index.html"><span class="mark">EM</span> Eero Moisio</a>
     <nav class="nav" id="nav" aria-label="Main">
-            <a href="index.html" aria-current="page">Projects</a>
-            <a href="work.html">Work</a>
-            <a href="hobbies.html">Hobbies</a>
+            <a href="#projects" aria-current="page">Projects</a>
+            <a href="#work">Work</a>
+            <a href="#hobbies">Hobbies</a>
     </nav>
     <div class="header-tools">
       <button class="icon-btn theme-btn" type="button" aria-label="Switch to light theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg></button>
@@ -38,6 +38,7 @@
 </header>
 
 <main id="main">
+  <section class="page" id="projects">
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
@@ -53,8 +54,8 @@
           kinds &mdash; working on (trying to maintain) personal vehicles, building autonomous
           robots, and competing in RC racing.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">See the projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn-ghost" href="work.html">Work experience</a>
+          <a class="btn btn-primary" href="#selected-projects">See the projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#work">Work experience</a>
         </div>
       </div>
       <figure class="hero-portrait">
@@ -73,7 +74,7 @@
       </dl>
     </div>
   </section>
-  <section class="section" id="projects">
+  <section class="section" id="selected-projects">
     <div class="container">
       <div class="section-head" data-reveal>
         <h2>Selected projects</h2>
@@ -152,6 +153,154 @@
         </div>
       </article>
     </div>
+  </section>
+  </section>
+  <section class="page" id="work">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Curriculum</p>
+      <h1>Work experience</h1>
+      <p class="lede">Doctoral research at the Fluid Power Laboratory of Aalto University,
+        and four years of post-tensioning work on Finnish infrastructure.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container timeline">
+      <article class="role">
+        <p class="role-date" data-reveal>2026 — present</p>
+        <div class="role-headings" data-reveal>
+          <h2 class="role-org">Aalto University</h2>
+          <p class="role-title">Doctoral researcher · Fluid Power Laboratory</p>
+        </div>
+        <div class="role-body" data-reveal>
+          <p>I started my doctoral studies at the Fluid Power Laboratory of Aalto University in 2026, returning to the laboratory where I previously worked as a research assistant. My research studies powertrain solutions for heavy machinery.</p>
+        </div>
+      </article>
+      <article class="role">
+        <p class="role-date" data-reveal>Dec 2025 — 2026</p>
+        <div class="role-headings" data-reveal>
+          <h2 class="role-org">Aalto University</h2>
+          <p class="role-title">Master’s thesis · AM Laboratory</p>
+        </div>
+        <div class="role-body" data-reveal>
+          <p>I completed my Master&#x27;s thesis at the AM Laboratory, titled Quantifying the impacts of different coarse modeling choices on vehicle energy consumption estimates. The thesis focused on modeling the temperature dependence of vehicle energy consumption across internal combustion, hybrid and fully electric powertrains. The vehicles studied ranged from passenger cars to the largest trucks allowed on Finnish roads.</p>
+        </div>
+      </article>
+      <article class="role">
+        <p class="role-date" data-reveal>Feb 2025 — Nov 2025</p>
+        <div class="role-headings" data-reveal>
+          <h2 class="role-org">Aalto University</h2>
+          <p class="role-title">Research assistant · Fluid Power Laboratory</p>
+        </div>
+        <div class="role-body" data-reveal>
+          <p>I worked as a research assistant for the Fluid Power Laboratory, focusing on the LEMMI project: designing and fabricating subsystems, and assembling the towers. My contributions include the return pump control logic, the mounting and placement of the return pump, the frame that holds the system&#x27;s main oil tank, fabricating the EtherCAT cable network, and mounting the fieldbuses on the towers.</p>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/lemmi_towers.jpg" data-caption="LEMMI project towers"><img src="images/opt/lemmi_towers.jpg" width="675" height="1200" loading="lazy" decoding="async" alt="LEMMI project towers"></button>
+          <button class="tile" type="button" data-full="images/opt/return_pump_logic.jpg" data-caption="Return pump control logic hardware"><img src="images/opt/return_pump_logic.jpg" width="675" height="1200" loading="lazy" decoding="async" alt="Return pump control logic hardware"></button>
+          <button class="tile" type="button" data-full="images/opt/okerman.jpg" data-caption="An Åkerman tracked excavator working in the forest"><img src="images/opt/okerman.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="An Åkerman tracked excavator working in the forest"></button>
+          <button class="tile" type="button" data-full="images/opt/lemmi_back.jpg" data-caption="Rear view of the LEMMI towers"><img src="images/opt/lemmi_back.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="Rear view of the LEMMI towers"></button>
+        </div>
+      </article>
+      <article class="role">
+        <p class="role-date" data-reveal>2020 — 2024</p>
+        <div class="role-headings" data-reveal>
+          <h2 class="role-org">Tensicon Oy</h2>
+          <p class="role-title">Post-tensioning construction worker</p>
+        </div>
+        <div class="role-body" data-reveal>
+          <p>I worked as a post-tensioning construction worker at Tensicon Oy between 2020 and 2024. The work included the manufacturing, installation and tensioning of various post-tensioned structures, such as bridges, construction crane mountings and wind turbine ground anchorings.</p>
+          <p>I had the unique opportunity to travel across Finland building infrastructure around the country, including projects in Turku, Pori, Vaasa, Raahe, Kärsämäki, Tampere, Jämsä, Kuopio, Joensuu and the Helsinki metropolitan area.</p>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/kamppi_nosturi.jpg" data-caption="Crane mounting work in Kamppi, Helsinki"><img src="images/opt/kamppi_nosturi.jpg" width="675" height="1200" loading="lazy" decoding="async" alt="Crane mounting work in Kamppi, Helsinki"></button>
+          <button class="tile" type="button" data-full="images/opt/tensicon_selfie.jpg" data-caption="On site during post-tensioning work"><img src="images/opt/tensicon_selfie.jpg" width="675" height="1200" loading="lazy" decoding="async" alt="On site during post-tensioning work"></button>
+          <button class="tile" type="button" data-full="images/opt/flame_hammer.jpg" data-caption="Holding a lit gas torch in the workshop, coils of post-tensioning strand behind"><img src="images/opt/flame_hammer.jpg" width="676" height="1200" loading="lazy" decoding="async" alt="Holding a lit gas torch in the workshop, coils of post-tensioning strand behind"></button>
+          <button class="tile" type="button" data-full="images/opt/pori_winter.jpg" data-caption="Winter site work in Pori"><img src="images/opt/pori_winter.jpg" width="907" height="1200" loading="lazy" decoding="async" alt="Winter site work in Pori"></button>
+        </div>
+      </article>
+    </div>
+  </section>
+  </section>
+  <section class="page" id="hobbies">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Off the clock</p>
+      <h1>Hobbies &amp; personal projects</h1>
+      <p class="lede">Things built for the fun of it &mdash; robots, RC electronics,
+        an ageing Corolla and a bit of welding.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">01</span>
+          <h3>FluPo robot</h3>
+          <span></span>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>FluPo is a gadget inspired by a vision of a mascot for the hydraulics laboratory of Aalto. FluPo embodies the essence of a benign seal that barely manages to make its way around. The idea is a work in progress, and will hopefully gain attention and support among the Mechatronics research group at Aalto.</p>
+          <p>FluPo runs an ESP32, two N20 DC motors, an L9110S dual channel H-bridge motor driver module and a 1S LiPo. The robot is controlled remotely over Wi-Fi using ROS 2 and an Xbox controller.</p>
+          <ul class="tags"><li>ESP32</li><li>ROS 2</li><li>Wi-Fi teleop</li><li>L9110S H-bridge</li></ul>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile tile-video" type="button" data-video="KASaZ1LAq40" data-orientation="portrait" data-caption="FluPo — robot in motion"><img src="https://i.ytimg.com/vi/KASaZ1LAq40/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="FluPo — robot in motion"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+          <button class="tile" type="button" data-full="images/opt/flupo_motor.jpg" data-caption="N20 motor and drive hardware for FluPo"><img src="images/opt/flupo_motor.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="N20 motor and drive hardware for FluPo"></button>
+          <button class="tile" type="button" data-full="images/opt/seal.jpg" data-caption="The seal that inspired FluPo"><img src="images/opt/seal.jpg" width="432" height="646" loading="lazy" decoding="async" alt="The seal that inspired FluPo"></button>
+          <button class="tile" type="button" data-full="images/opt/esp.jpg" data-caption="ESP32 controller wiring for FluPo"><img src="images/opt/esp.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="ESP32 controller wiring for FluPo"></button>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">02</span>
+          <h3>RC drifting gyro</h3>
+          <span></span>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>An Arduino based RC drifting gyroscope that produces realistic countersteer. The system uses an MPU6050 IMU to read the yaw rate of the RC car, and uses this to command the steering servo to countersteer, replicating the behaviour of a real car. The project turned out very well, competing with commercial products in terms of performance. The countersteer logic is based on PD control of yaw rate.</p>
+          <ul class="tags"><li>Arduino</li><li>MPU6050</li><li>PD control</li><li>Servo steering</li></ul>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile tile-video" type="button" data-video="uRqVpNOCs2U" data-orientation="landscape" data-caption="RC drift gyro — in action"><img src="https://i.ytimg.com/vi/uRqVpNOCs2U/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="RC drift gyro — in action"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+          <button class="tile" type="button" data-full="images/opt/rc_gyro.jpg" data-caption="The Arduino based RC drift gyro"><img src="images/opt/rc_gyro.jpg" width="1200" height="797" loading="lazy" decoding="async" alt="The Arduino based RC drift gyro"></button>
+          <button class="tile" type="button" data-full="images/opt/rc_drift_tandem.jpg" data-caption="Tandem run at an RC drift event"><img src="images/opt/rc_drift_tandem.jpg" width="1200" height="797" loading="lazy" decoding="async" alt="Tandem run at an RC drift event"></button>
+          <button class="tile tile-video" type="button" data-video="ussGp65kmLM" data-orientation="landscape" data-caption="RC drift gyro — second video"><img src="https://i.ytimg.com/vi/ussGp65kmLM/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="RC drift gyro — second video"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">03</span>
+          <h3>Rolling a boulder up a hill</h3>
+          <p class="entry-meta">Toyota Corolla “IPI”</p>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>Owning a vehicle is fun, and it is even more fun when you get to practise mechanic skills to maintain its ability to function. Over the years a lot has happened to IPI: driveshafts have snapped in half and metal has slowly rusted away. IPI has given many a chance to learn by doing.</p>
+          <ul class="tags"><li>Maintenance</li><li>Drivetrain</li><li>Rust repair</li></ul>
+        </div>
+        <div class="media-grid" data-count="4" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/corolla.jpg" data-caption="The Toyota Corolla, IPI"><img src="images/opt/corolla.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="The Toyota Corolla, IPI"></button>
+          <button class="tile tile-video" type="button" data-video="1KoBnRm-fFQ" data-orientation="portrait" data-caption="Corolla — workshop clip"><img src="https://i.ytimg.com/vi/1KoBnRm-fFQ/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Corolla — workshop clip"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+          <button class="tile tile-video" type="button" data-video="bB_dOzumk4Y" data-orientation="portrait" data-caption="Corolla — workshop clip"><img src="https://i.ytimg.com/vi/bB_dOzumk4Y/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Corolla — workshop clip"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.3-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg></span></button>
+          <button class="tile" type="button" data-full="images/opt/ilmari_corolla.jpg" data-caption="Working on the Corolla"><img src="images/opt/ilmari_corolla.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="Working on the Corolla"></button>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head" data-reveal>
+          <span class="entry-num">04</span>
+          <h3>Man of steel</h3>
+          <span></span>
+        </div>
+        <div class="entry-body" data-reveal>
+          <p>This little guy will take good care of your keys.</p>
+          <ul class="tags"><li>Welding</li><li>Steel</li></ul>
+        </div>
+        <div class="media-grid" data-count="1" data-reveal>
+          <button class="tile" type="button" data-full="images/opt/weld_butler.jpg" data-caption="Welded steel figure used as a key holder"><img src="images/opt/weld_butler.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="Welded steel figure used as a key holder"></button>
+        </div>
+      </article>
+    </div>
+  </section>
   </section>
 </main>
 

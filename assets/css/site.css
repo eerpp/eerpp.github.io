@@ -377,6 +377,13 @@ h1, h2, h3, h4 {
 .spec dd { font-size: 0.92rem; font-weight: 500; }
 
 /* --- Sections ----------------------------------------------------------- */
+.page.is-entering { animation: pageIn 0.4s var(--ease) both; }
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .page.is-entering { animation: none; } }
+
 .section { padding-block: clamp(3.5rem, 8vw, 6rem); }
 .section + .section { padding-top: 0; }
 .page-head + .section { padding-top: clamp(1rem, 2.5vw, 2rem); }
@@ -685,13 +692,13 @@ h1, h2, h3, h4 {
 .lightbox-close svg { width: 1.1rem; height: 1.1rem; }
 
 /* --- Scroll reveal ------------------------------------------------------ */
-[data-reveal] {
+.js [data-reveal] {
   opacity: 0;
   transform: translateY(26px);
   transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
   transition-delay: var(--reveal-delay, 0ms);
 }
-[data-reveal].is-in { opacity: 1; transform: none; }
+.js [data-reveal].is-in { opacity: 1; transform: none; }
 
 /* --- Responsive --------------------------------------------------------- */
 @media (max-width: 900px) {
