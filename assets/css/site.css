@@ -5,26 +5,26 @@
 
 /* --- Design tokens ------------------------------------------------------ */
 :root {
-  --bg:            #0a0b0e;
-  --bg-alt:        #0e1015;
-  --surface:       #13171f;
-  --surface-hi:    #191e28;
-  --border:        #232936;
-  --border-hi:     #333c4d;
+  --bg:            #17120e;
+  --bg-alt:        #1d1712;
+  --surface:       #241d16;
+  --surface-hi:    #2d241c;
+  --border:        #3a2f25;
+  --border-hi:     #504133;
 
-  --text:          #e8ecf3;
-  --text-dim:      #98a3b4;
-  --text-faint:    #737e90;
+  --text:          #f2ece4;
+  --text-dim:      #b9aa99;
+  --text-faint:    #998a78;
 
-  --accent:        #ffffff;
-  --accent-hi:     #d3d9e2;
-  --accent-dim:    rgba(255, 255, 255, 0.09);
-  --accent-line:   rgba(255, 255, 255, 0.26);
-  --accent-ink:    #0a0b0e;   /* text on an accent fill */
+  --accent:        #d98a5f;
+  --accent-hi:     #e8a077;
+  --accent-dim:    rgba(217, 138, 95, 0.12);
+  --accent-line:   rgba(217, 138, 95, 0.34);
+  --accent-ink:    #17120e;   /* text on an accent fill */
 
-  --grid-line:     rgba(255, 255, 255, 0.035);
-  --shadow:        0 18px 40px -12px rgba(0, 0, 0, 0.65);
-  --shadow-lift:   0 28px 60px -14px rgba(0, 0, 0, 0.8);
+  --grid-line:     rgba(255, 233, 210, 0.04);
+  --shadow:        0 18px 40px -12px rgba(0, 0, 0, 0.6);
+  --shadow-lift:   0 28px 60px -14px rgba(0, 0, 0, 0.75);
 
   --font-display:  'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
   --font-body:     'Inter', system-ui, -apple-system, sans-serif;
@@ -38,26 +38,6 @@
 }
 
 :root[data-theme="light"] {
-  --bg:          #fbfbfc;
-  --bg-alt:      #f3f4f7;
-  --surface:     #ffffff;
-  --surface-hi:  #f7f8fa;
-  --border:      #e2e5ea;
-  --border-hi:   #cbd1da;
-  --text:        #12151b;
-  --text-dim:    #545d6d;
-  --text-faint:  #697285;
-  --accent:      #14181f;
-  --accent-hi:   #000000;
-  --accent-dim:  rgba(20, 24, 31, 0.07);
-  --accent-line: rgba(20, 24, 31, 0.22);
-  --accent-ink:  #ffffff;
-  --grid-line:   rgba(0, 0, 0, 0.04);
-  --shadow:      0 14px 34px -14px rgba(20, 26, 38, 0.2);
-  --shadow-lift: 0 24px 50px -16px rgba(20, 26, 38, 0.28);
-}
-
-:root[data-theme="earth"] {
   --bg:          #f6efe6;
   --bg-alt:      #efe5d8;
   --surface:     #fcf8f2;
@@ -76,6 +56,7 @@
   --shadow:      0 14px 34px -14px rgba(92, 70, 48, 0.22);
   --shadow-lift: 0 24px 50px -16px rgba(92, 70, 48, 0.3);
 }
+
 
 /* --- Reset -------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -263,11 +244,9 @@ h1, h2, h3, h4 {
 }
 .icon-btn svg { width: 1.05rem; height: 1.05rem; }
 
-.theme-btn .sun, .theme-btn .leaf { display: none; }
+.theme-btn .sun { display: none; }
 :root[data-theme="light"] .theme-btn .moon { display: none; }
 :root[data-theme="light"] .theme-btn .sun { display: block; }
-:root[data-theme="earth"] .theme-btn .moon { display: none; }
-:root[data-theme="earth"] .theme-btn .leaf { display: block; }
 
 /* --- Hero --------------------------------------------------------------- */
 .hero {

@@ -5,15 +5,13 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* --- Theme ------------------------------------------------------------ */
-  var THEMES = ['dark', 'light', 'earth'];
   var themeBtn = document.querySelector('.theme-btn');
   if (themeBtn) {
     themeBtn.addEventListener('click', function () {
-      var cur = THEMES.indexOf(document.documentElement.dataset.theme || 'dark');
-      var next = THEMES[(cur + 1) % THEMES.length];
-      var after = THEMES[(THEMES.indexOf(next) + 1) % THEMES.length];
+      var next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
       document.documentElement.dataset.theme = next;
-      themeBtn.setAttribute('aria-label', next + ' theme active, switch to ' + after);
+      themeBtn.setAttribute('aria-label',
+        'Switch to ' + (next === 'light' ? 'dark' : 'light') + ' theme');
       try { localStorage.setItem('theme', next); } catch (e) {}
     });
   }
