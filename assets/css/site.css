@@ -14,12 +14,13 @@
 
   --text:          #e8ecf3;
   --text-dim:      #98a3b4;
-  --text-faint:    #6a7485;
+  --text-faint:    #737e90;
 
-  --accent:        #ff7a33;
-  --accent-hi:     #ff9459;
-  --accent-dim:    rgba(255, 122, 51, 0.13);
-  --accent-line:   rgba(255, 122, 51, 0.35);
+  --accent:        #ffffff;
+  --accent-hi:     #d3d9e2;
+  --accent-dim:    rgba(255, 255, 255, 0.09);
+  --accent-line:   rgba(255, 255, 255, 0.26);
+  --accent-ink:    #0a0b0e;   /* text on an accent fill */
 
   --grid-line:     rgba(255, 255, 255, 0.035);
   --shadow:        0 18px 40px -12px rgba(0, 0, 0, 0.65);
@@ -45,14 +46,35 @@
   --border-hi:   #cbd1da;
   --text:        #12151b;
   --text-dim:    #545d6d;
-  --text-faint:  #7d8798;
-  --accent:      #e2560d;
-  --accent-hi:   #c2470a;
-  --accent-dim:  rgba(226, 86, 13, 0.09);
-  --accent-line: rgba(226, 86, 13, 0.3);
+  --text-faint:  #697285;
+  --accent:      #14181f;
+  --accent-hi:   #000000;
+  --accent-dim:  rgba(20, 24, 31, 0.07);
+  --accent-line: rgba(20, 24, 31, 0.22);
+  --accent-ink:  #ffffff;
   --grid-line:   rgba(0, 0, 0, 0.04);
   --shadow:      0 14px 34px -14px rgba(20, 26, 38, 0.2);
   --shadow-lift: 0 24px 50px -16px rgba(20, 26, 38, 0.28);
+}
+
+:root[data-theme="earth"] {
+  --bg:          #f6efe6;
+  --bg-alt:      #efe5d8;
+  --surface:     #fcf8f2;
+  --surface-hi:  #f3eadd;
+  --border:      #e3d7c6;
+  --border-hi:   #cbb9a1;
+  --text:        #3a322a;
+  --text-dim:    #6b5f52;
+  --text-faint:  #77695a;
+  --accent:      #9a5c3a;
+  --accent-hi:   #834a2c;
+  --accent-dim:  rgba(154, 92, 58, 0.12);
+  --accent-line: rgba(154, 92, 58, 0.32);
+  --accent-ink:  #fff8f1;
+  --grid-line:   rgba(88, 66, 44, 0.05);
+  --shadow:      0 14px 34px -14px rgba(92, 70, 48, 0.22);
+  --shadow-lift: 0 24px 50px -16px rgba(92, 70, 48, 0.3);
 }
 
 /* --- Reset -------------------------------------------------------------- */
@@ -87,7 +109,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   border-radius: 3px;
 }
 
-::selection { background: var(--accent); color: #fff; }
+::selection { background: var(--accent); color: var(--accent-ink); }
 
 /* --- Typography --------------------------------------------------------- */
 h1, h2, h3, h4 {
@@ -122,7 +144,7 @@ h1, h2, h3, h4 {
   top: 0;
   z-index: 200;
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-ink);
   padding: 0.7rem 1.2rem;
   font-weight: 600;
 }
@@ -241,9 +263,11 @@ h1, h2, h3, h4 {
 }
 .icon-btn svg { width: 1.05rem; height: 1.05rem; }
 
-.theme-btn .sun { display: none; }
-:root[data-theme="light"] .theme-btn .sun { display: block; }
+.theme-btn .sun, .theme-btn .leaf { display: none; }
 :root[data-theme="light"] .theme-btn .moon { display: none; }
+:root[data-theme="light"] .theme-btn .sun { display: block; }
+:root[data-theme="earth"] .theme-btn .moon { display: none; }
+:root[data-theme="earth"] .theme-btn .leaf { display: block; }
 
 /* --- Hero --------------------------------------------------------------- */
 .hero {
@@ -317,7 +341,7 @@ h1, h2, h3, h4 {
 .btn-primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--accent-ink);
 }
 .btn-primary:hover { background: var(--accent-hi); box-shadow: 0 10px 24px -8px var(--accent-line); }
 .btn-ghost:hover { border-color: var(--text-faint); background: var(--surface-hi); }
@@ -559,7 +583,12 @@ h1, h2, h3, h4 {
   transition: transform 0.45s var(--ease), background 0.35s var(--ease);
 }
 .tile-video .play svg { width: 1.15rem; height: 1.15rem; margin-left: 2px; }
-.tile-video:hover .play { transform: translate(-50%, -50%) scale(1.13); background: var(--accent); border-color: var(--accent); }
+.tile-video:hover .play {
+  transform: translate(-50%, -50%) scale(1.13);
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
 
 /* --- Timeline (work experience) ----------------------------------------- */
 .timeline { position: relative; }
@@ -688,7 +717,12 @@ h1, h2, h3, h4 {
   background: rgba(255, 255, 255, 0.06);
   transition: background 0.3s var(--ease), transform 0.3s var(--ease);
 }
-.lightbox-close:hover { background: var(--accent); border-color: var(--accent); transform: rotate(90deg); }
+.lightbox-close:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  transform: rotate(90deg);
+}
 .lightbox-close svg { width: 1.1rem; height: 1.1rem; }
 
 /* --- Scroll reveal ------------------------------------------------------ */
