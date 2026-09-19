@@ -574,7 +574,7 @@ h1, h2, h3, h4 {
 .role {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 9.5rem) minmax(0, var(--measure));
+  grid-template-columns: minmax(0, 10.5rem) minmax(0, var(--measure));
   gap: 0.6rem 2rem;
   align-items: baseline;
   justify-content: center;
